@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+/* Fix potential body margin issues */
+/* html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+} */
+
+body {
+    overflow-y: auto;
+}
+
+.about-page {
+    text-align: center;
+    /* padding-top: 60px; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(55, 102, 104);
+    color: white;
+    top:0;
+    left:0;
+    position: fixed;
+    width: 100%;
+    z-index:100;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li {
+      padding: 15px;
+    }
+  }
+
+
+
+form {
+   width:300rem;
+}
+
+.fundraiser-form input,
+.fundraiser-form textarea,
+.fundraiser-form select {
+    display: block;
+    width: 100%;
+    margin: 0 !important;   
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.start {
+  background-color: #555;
+  padding: 8px;
+  border-radius: 5px;
+} 

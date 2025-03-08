@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+
+/* html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+} */
+   
+body {
+    overflow-y: auto;
+}
+
+
+.footer-to-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background-color: rgb(55, 102, 104);
+    color:white;
+    margin-top: 20px;
+    position:fixed;
+    bottom: 0;
+    width:230vh;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.contact-page {
+    overflow-y: auto;
+}
+
+
+
+form {
+    background-color: rgb(55, 102, 104);
+}
+
+#name {
+    border-radius: 10px;
+}
+
+#email {
+    border-radius: 10px;
+
+}
+
+#message {
+    border-radius: 10px;
+    width: 250px;
+}
+
+#submit {
+    border-radius: 10px;
+    width: 250px;
+}
+
+.contact-details {
+    justify-items: center;
+    display:flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+
+.contact-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 30px; 
+    color: #333; 
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: white; 
+}
+
+.social-icons .fab {
+    transition: color 0.3s;
+} 
+
+.contact {
+    background-color: #555;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  } 

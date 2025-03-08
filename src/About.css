@@ -1,0 +1,209 @@
+
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin:0;
+    }
+    
+    
+    html, body {
+      width: 100%;
+      min-height: 100vh !important;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; 
+    }
+    
+    body {
+      overflow-y: auto !important;
+    } 
+    
+      .about-page {
+        width: 100%;
+        text-align: center;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+      } 
+    
+      .hero {
+        position: relative;
+      }
+      
+      .hero-image {
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        min-width: 100vw;
+        height: 450px;
+        object-fit: cover;
+        filter: brightness(0.7); 
+      }
+      
+      .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width:80%;
+        margin: auto;
+      }
+      
+      .hero-text h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .hero-text p {
+        font-size: 18px;
+        max-width: 600px;
+        line-height: 1.5;
+        text-align: center;
+      }
+    
+    .user-reviews {
+        padding: 30px 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .user-reviews h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    .reviews-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .review-card {
+        background-color: rgba(255, 255, 255, 0.875);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        max-width: 250px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
+    }
+    
+    .review-title {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+    
+    .review-text {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+    
+    .review-author {
+        font-size: 17px;
+        color: #888;
+        font-style: italic;
+    }
+    
+     footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:10px;
+      background-color: rgb(55, 102, 104);
+      color:white;
+      margin-top: 20px;
+      position:fixed;
+      bottom: 0;
+      width:230vh;
+      left: 0;
+      position: fixed;
+      z-index: 1000;
+    } 
+
+    .images {
+        padding:30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-pics {
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-flow: row;
+            gap:20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    
+        .polaroid img {
+            width:300px;
+            height:270px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+        }
+        
+       
+        .start {
+          max-width: 260px;
+          background-color: rgb(55, 102, 104);
+          color: white;
+          border: 1px solid white;
+          padding: 10px;
+          border-radius: 15px;
+          cursor: pointer;
+          margin-top: 25px;
+        }
+    
+        .start:hover {
+          opacity: 0.5;
+        }
+    
+        
+        #donate {
+          max-width: 250px;
+          background-color: rgb(55, 102, 104);
+          color: white;
+          border: 1px solid white;
+          padding: 15px;
+          border-radius: 15px;
+          cursor: pointer;
+        }
+    
+        #donate:hover {
+          opacity: 0.5;
+        }
+    
+        .page h2 {
+          margin-bottom: 20px;
+        }
+    
+        .page p {
+          padding: 0 30px;
+        }
+    
+        .about {
+          background-color: #555;
+          padding: 8px;
+          border-radius: 5px;
+          border: 1px solid #ddd;
+        }

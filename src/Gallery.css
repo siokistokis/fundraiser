@@ -1,0 +1,170 @@
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+
+ html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important; 
+} 
+
+body {
+    overflow-y: auto !important;
+} 
+
+/* .about-page {
+    width: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden !important;
+  
+} */
+
+.about-page {
+  width: 100%;
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  overflow: visible; 
+}
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+    top:0;
+    left:0;
+    position: fixed;
+    width: 100%;
+    z-index:1000;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li {
+      padding: 15px;
+    }
+  }
+
+  .slideshow {
+    position: relative;
+    width: 50%;
+    height: 50vh; 
+    margin: 0px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.slide-image {
+    width: 70%;
+    min-height: 55vh; 
+    margin-top: 5%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.slideshow-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.prev, .next {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+  
+  .prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .gallery {
+    background-color: #555;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: table-row;
+  } 
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+    
+  }
+

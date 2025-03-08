@@ -1,0 +1,150 @@
+/* Menu Container */
+.menu-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  /* Hamburger Icon */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1100; /* Ensure it's above everything */
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  /* Transform bars into an "X" when open */
+  .menu-icon.open .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .menu-icon.open .bar:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+  }
+  
+  .menu-icon.open .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+
+  /* Buttons Container */
+  .top-buttons {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Sign In Button */
+  .sign-in-btn, 
+  .fundme-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color:white;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width:200px;
+    margin-top: 50%;
+  } 
+
+  @media (max-width:768px) {
+    .sign-in-btn {
+      /*padding:5px;
+      font-size: 12px;
+      width:150px;*/
+      display: none;
+    }
+  }
+  
+  /* Hover Effects */
+.sign-in-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+
+  @media (max-width:768px) {
+    .fundme-btn {
+      /*padding:5px;
+      font-size: 12px;
+      width:150px;*/
+      display: none;
+    }
+  }
+  
+  .fundme-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Side Menu */
+  .menu {
+    position: fixed;
+    top: 0;
+    /*left: -250px;  Initially hidden */
+    left:-250px;
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(55, 102, 104, 0.815);
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .menu.open {
+    left: 0; /* Show when open */
+  }
+  
+  .menu ul {
+    /* list-style-type: none; */
+    padding: 0;
+  }
+  
+  .menu ul li {
+    padding: 4px;
+    text-align: center;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu ul li:hover {
+    background-color: #555;
+  }
+
+
+
+
+
+
+
+
+
